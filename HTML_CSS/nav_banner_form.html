@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .first-block{
+            background-image: url(https://colorlib.com/preview/theme/studylab/images/bg_1.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            height: 625px;
+            background-position: center center;
+        }
+        .sub-block{
+            margin-left: 7.63rem;
+        }
+        #nav-bar{
+            width: 100%;
+            background-color: #ffffff;
+            height: 90px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        #logo, #links{
+            float: left;
+        }
+        #links li{
+            float: left;
+        }
+        #logo{
+            width: 41%;
+            margin-top: 13px;
+            padding-top: 10px;
+        }
+        #links{
+            width: 50%;
+        }
+        #logo a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        #logo span{
+            border: 2px;
+            background:linear-gradient(135deg, #ce4be8 0%, #207ce5 100%); ;
+            padding: 25px 21px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        #links a{
+            text-decoration: none;
+            cursor: pointer;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        #links ul{
+            margin-top: 26px;
+        }
+        #header, #form{
+            float: left;
+        }
+        #header{
+            width: 60%;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 136px;
+        }
+        #form{
+            width: 40%;
+            border: 1px solid white;
+            background: #ffffff;
+            border-radius: 8px;
+            width: 27.56rem;
+            margin-top: 34px;
+            margin-left: -74px;
+        }
+        #form form{
+            text-align: center;
+        }
+        #form h3{
+            margin-left: 46px;
+            font-weight: 500;
+            font-size: 20px;
+            color: #4986fc;
+            font-family: sans-serif;
+            margin-top: 52px;
+        }
+        #form input[type="text"], input[type="email"],input[type="password"]{
+            border-radius: 26px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 27px;
+            font-size: 16px;
+            height: 52px;
+            width: 19.18rem;
+        }
+        #form span{
+            border: 1px solid #4986fc;
+            background: #4986fc;
+            color: #fff;
+            border-radius: 6px;
+            padding: 0.375rem 0.75rem;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+        #form p{
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #999999;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 61px;
+        }
+        #form a{
+            text-decoration: none;
+            color: #4986fc;
+            cursor: pointer;
+        }
+        #header span{
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 700;
+        }
+        #header h1{
+            font-size: 50px;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-top: 3px;
+            margin-bottom: 25px;
+        }
+        #header p{
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        #header input[type="button"], input[type="submit"]{
+            border: 1px solid #4986fc;
+            background: #4986fc;
+            color: #fff;
+            border-radius: 4px;
+            padding: 4px 9px;
+            line-height: 1.5;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        #header input[type="submit"]{
+            border: none;
+            background: #fff;
+            color: black;
+        }
+        .home a:hover{
+            color: #ffffff;
+        }
+        #form span:active{
+            border: 3px solid #7ba5f8;
+        }
+        #header input[type="button"]:active{
+            border: 3px solid #7ba5f8;
+        }
+        #form input[type="text"]:active, input[type="email"]:active,input[type="password"]:active {
+            border: none;
+            border-radius: 26px;
+            border: 1px solid #4986fc;
+        }
+        #links .home a{
+            color: #4986fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-block">
+        <div class="sub-block">
+            <div id="navBar">
+                <div id="logo">
+                    <a href="Task-15.10.html"><span>StudyLab</span></a>
+                </div>
+                <div id="links">
+                    <ul type="none">
+                        <li class="home"><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="instructor.html">Instructor</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="cover">
+                <div id="header">
+                    <span>WELCOME TO STUDYLAB</span>
+                    <h1>We Are An Online Platform <br/> Make Learn</h1>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia</p>
+                    <input type="button" value="Our Course">
+                    <input type="submit" value="Learn More">
+                </div>
+                <div id="form">
+                    <h3>Register Now</h3>
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                        <div style="padding-left: 19.31rem;">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div>
+        <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+            create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+            trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+            without a hitch on all devices and platforms. But the fun does not end here.
+
+            Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+            need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+            pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+            <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                without a hitch on all devices and platforms. But the fun does not end here.
+    
+                Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                    create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                    trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                    without a hitch on all devices and platforms. But the fun does not end here.
+        
+                    Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                    need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                    pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                    <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                        create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                        trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                        without a hitch on all devices and platforms. But the fun does not end here.
+            
+                        Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                        need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                        pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                        <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                            create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                            trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                            without a hitch on all devices and platforms. But the fun does not end here.
+                
+                            Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                            need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                            pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                            <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                                create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                                trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                                without a hitch on all devices and platforms. But the fun does not end here.
+                    
+                                Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                                need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                                pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                                <p>Studylab is a modern, free education HTML website template to promote your online courses in the best possible light. If you would like to 
+                                    create an online learning platform, Studylab is a great start to something fresh and novel. Thanks to the beautiful design, you will have no 
+                                    trouble capturing every student’s interest right from the get-go. Also, Studylab is a Bootstrap Framework template, so your page will run 
+                                    without a hitch on all devices and platforms. But the fun does not end here.
+                        
+                                    Studylab’s code is well-organized and easy to adjust so that you can tailor the default settings to your project’s direction. For this, you do 
+                                    need programming knowledge to perform any tweaks you desire. Wonderful home page, different inner layouts, social icons, blog and contact 
+                                    pages, you have it all at your fingertips. Realize your online educational project idea with Studylab and build a top-notch eLearning hub.</p>
+                                        
+    </div> -->
+</body>
+</html>
+
+
+<!-- <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="course.html">Course</a>
+                    <a href="instructor.html">Instructor</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a> -->
+
+<!-- line: 173 active psuedo class applied blue circular bordr,  but a rectangular black border also appears. hoe to remove that? -->
+<!-- line:64 hover option on home isnt working -->
+<!-- how to do the grey area after sign in line -->
+<!-- linear gradient pink at the right on background -->
+<!-- bav-bar is not fixing and the properties are not applying -->

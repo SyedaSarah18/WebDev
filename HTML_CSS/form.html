@@ -1,0 +1,87 @@
+<!-- Developing form part of "https://colorlib.com/preview/#equipo" using form concepts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #block1{
+            background-color: #ffa931;
+        }
+        #request-form{
+            background-color: #042e4f;
+            width: 444px;
+            height: 626px;
+            margin: auto;
+            margin-top: -17px;
+        }
+        h3{
+            font-size: 16px;
+            color: #ffa931;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 40px;
+            padding-top: 43px;
+            padding-bottom: 18px;
+            letter-spacing: 2px;
+        }
+        input[type="text"], input[type="tel"], select, textarea, input[type="submit"] {
+            border: none;
+            outline: 0px;
+            border-radius: 5px;
+            width: 21.6rem;
+            margin-left: 40px;
+            margin-bottom: 18px;
+            padding: 17px 10px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type="submit"]{
+            width: 22.7rem;
+            background: #ffa931;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="block1">
+        <div id="request-form">
+            <h3>REQUEST QUOTE</h3>
+            <form>
+                <div>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="tel" placeholder="Phone">
+                </div>
+                <div>
+                    <select style="width: 22.7rem;">
+                        <option value="undefined">Select Your Services</option>
+                        <option value="forklift">Forklift</option>
+                        <option value="bulldozer">Bulldozer</option>
+                        <option value="excavator">Excavator</option>
+                        <option value="roadroller">Road Roller</option>
+                        <option value="otherservices">Other Services</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea placeholder="Message" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="APPOINTMENT">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
