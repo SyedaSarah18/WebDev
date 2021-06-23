@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .errorMsgg{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3>REGISTER NOW</h3>
+        <form action="">
+            <div>
+                <label>Name</label>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+            <div>
+                <label for="">Gender</label>
+                <input type="radio" value="Male"  id="gender">Male
+                <input type="radio" value="Female"  id="gender">Female
+            </div>
+            <div>
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div>
+                <input type="password" placeholder="Confirm Password" id="cpassword">
+            </div>
+            <div>
+                <input type="button" onclick="register()" value="REGISTER"> 
+            </div>
+            <!-- <button onclick="register()">REGISTER</button> -->
+        </form>
+    </div>
+    <script>
+        function register() {
+            var name = document.getElementById('name').value;
+            var DOB = document.getElementById('dob').value;
+            var Gender = document.getElementById('gender').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var cpassword = document.getElementById('cpassword').value;
+            var users = [];
+
+            if(password != cpassword){
+                document.getElementById('cpassword').classList.add('errorMsgg');
+            }
+            users.push({
+                Name: name,
+                DOB: DOB,
+                Gender: Gender,
+                Email: email,
+                Password: password
+            });
+
+            localStorage.setItem('userInfo', JSON.stringify(users));
+            window.location.href  = "Task.2.11.html";
+        }
+    </script>
+</body>
+</html>

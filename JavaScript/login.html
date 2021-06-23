@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .errorMsg{
+            border: 2px solid red;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>LOGIN</h2>
+    <div style="padding: 20px 0px;">
+        <input type="email" placeholder="Email" id="email">
+    </div>
+    <div style="padding: 20px 0px;">
+        <input type="password" placeholder="password" id="passwordd">
+    </div>
+    <input type="button" value="Login" onclick="login()">
+    <p id="errorMsg"></p>
+    <a href="Task-5.11.html">Not a  user? Register Now! </a>
+    <script>
+        var users = localStorage.getItem('userInfo');
+        console.log(JSON.parse(users));
+        users = JSON.parse(users);
+        function login(){
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('passwordd').value;
+            // var ifExist = false;
+            // var name = '';
+           for(var i=0; i<users.length ; i++)
+           {
+        //        if(email === users[i].email && password === users[i].password)
+        //        {
+        //             ifExist = true;
+        //             console.log('Verified')
+        //             name = users[i].name;
+        //             console.log('Verified')
+        //             break;
+        //        }
+        
+           if(email === users[i].Email && password === users[i].Password){
+               
+                   window.location.href = 'homepage.html';
+                   break;
+              
+           }else{
+               document.getElementById('errorMsg').innerHTML = 'Incorrect email or password';
+               document.getElementById('passwordd').classList.add('errorMsg');
+           }
+        }
+        }
+        console.log(users);
+    </script>
+</body>
+</html>
