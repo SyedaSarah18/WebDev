@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 30px;
+            font-weight: 700;
+            color: yellow;
+        }
+        /* p::first-line{
+            font-size: 30px;
+            font-weight: 700;
+            color: yellow;
+        } */
+        p::before{
+            content: 'MY Para ---';
+        }
+        p::after{
+            content: 'MY PARA---';
+        }
+        p::selection{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Learn Anything You Want Today</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in 
+            Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it 
+            with the necessary regelialia.</p>
+    </div>
+    <iframe src="https://preview.colorlib.com/#estore" width="500px" height="500px"></iframe>
+    <iframe src="http://youtube.com/embed/bcIw8q2ieCI?playlist=bcIw8q2ieCI, 28NB3L9YuVI, e1xCU9ydG-A&controls=0" width="500px" height="500px"></iframe>
+
+    <!-- <audio controls src="http://techslides.com/demos/samples/sample.mp3"></audio> -->
+    <!-- or -->
+    <!-- <audio controls>
+        <source src="http://techslides.com/demos/samples/sample.mp3">
+    </audio> -->
+
+    <!-- <video controls src="http://techslides.com/demos/samples/sample.webm"></video> -->
+    <!-- or -->
+    <video autoplay muted>
+        <source src="http://techslides.com/demos/samples/sample.mp4">
+    </video>
+</body>
+</html>
+
+<!-- iframe also helps in adding externals webpages to your current webpages -->
+<!-- line: 38, iframe gives you, video, playlsit, control options, by default controls=1, but you can change it to 0. -->
+<!-- instead of tkaing the help of utube for audio video through iframe tag we can now use audio and video tag separately -->
+<!-- line: 40, along with audio tag you have to c[use "controls" cuz they wont be visible in the server unless you specify -->
+<!-- line: 42 audio and video autoplay is disabled by the browser so not possible, only "controls" value can be given in audio and video tag
+but i we use muted attribute in video then it'll autoplay -->
+<!-- line 46: html video tag supports only mp4, ogg, webm type video files so its actually better to upload our video and then use iframe from there cuz 
+    our servers sometimes have problems  -->
+
+<!-- line: 48 "muted" is a predefined attribute of video tag, to autoplay a video you shoukd first use "muted" then autoplay will work -->
